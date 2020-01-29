@@ -1,0 +1,11 @@
+<div class="card animated fadeIn fast" >
+  <img [src]="character.img" class="card-img-top card-img-character" [alt]="character.nombre">
+  <div class="card-body">
+    <h4>{{ character.nombre }}</h4>
+    <h6 *ngIf="character.alias">( {{ character.alias }} )</h6>
+    <p class="card-text">{{ character.bio }}</p>
+    <p class="card-text"><small class="text-muted">Nacimiento: {{ character.nacimiento }} ( {{character.edad}} )</small></p>
+    <button (click)="showCharacter()" type="button" class="btn btn-blue">Ver más...</button>
+    <!-- <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block">Ver más link... </a> -->
+  </div>
+</div>

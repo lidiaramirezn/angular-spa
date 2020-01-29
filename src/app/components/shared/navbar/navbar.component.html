@@ -1,25 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="assets/img/A-64.png" width="30" height="30" alt="">
+<nav class="navbar navbar-expand-lg navbar-sky">
+  <a class="navbar-brand"  routerLink="/">
+    <img src="assets/img/logo.png" class="navbar-brand-img" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto navbar-flex-grow">
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/home" >Home</a>
+        <a class="nav-link" routerLink="/personajes">Personajes</a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/heroes">Heroes</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/about">About</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </ul>    
+    <div class="navbar-flex-grow text-center">
+      <a class="" href="https://github.com/LidiaRamirez/angular-spa-udemy" target="_blank">
+        <img src="assets/img/github-logo.png">
+      </a>
+    </div>
   </div>
 </nav>

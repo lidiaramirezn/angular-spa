@@ -1,0 +1,16 @@
+<h1 class="animated fadeIn fast"> {{ character.nombre }}</h1>
+<hr>
+<div class="row animated fadeIn fast"> 
+  <div class="col-md-4">
+    <img [src]="character.img" class="img-fluid" [alt]="character.nombre" class="character-img">
+    <br><br>
+    <a [routerLink]="['/personajes']" class="btn btn-outline-danger btn-block">Regresar</a>
+  </div>
+  <div class="col-md-8">
+    <h3>{{ character.nombre | uppercase }}</h3>
+    <hr>
+    <p>
+      {{ character.bio }}
+    </p>
+  </div>
+</div>

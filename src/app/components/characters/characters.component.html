@@ -1,0 +1,7 @@
+<h1>Piratas Sombrero de Paja</h1>
+<hr>
+<div class="card-columns">
+  <app-character-card [character]="character" [index]="i" (characterSelect)="showCharacter($event)"
+    *ngFor="let character of charactersOP; let i = index">
+  </app-character-card>
+</div>
