@@ -249,3 +249,33 @@ funcionEventoPadre(parametro) {
   //  Realiza alguna acción
 }
 ~~~
+
+## Integrar Tailwind
+
+Tailwind es un framework CSS para crear rápidamente interfaces de usuario personalizadas.
+
+> Referencia: [https://www.auroria.io/blog/using-tailwindcss-framework-with-angular] (https://www.auroria.io/blog/using-tailwindcss-framework-with-angular)
+
+### Extra
+
+Para cambiar de scss a css, ejecutar el siguiente comando:
+
+~~~
+ng config defaults.styleExt=scss
+~~~
+
+Se genera en `angular.json` la siguiente estructura:
+~~~
+"defaultProject": "angular-spa-udemy",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
+~~~
+
+Luego cambiar los archivos de .css a .scss en el archivo angular.json y en la estructura de carpetas
+
+### Extensión de visual code usada 
+
+HTML CSS Support

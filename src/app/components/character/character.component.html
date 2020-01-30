@@ -1,16 +1,16 @@
-<h1 class="animated fadeIn fast"> {{ character.nombre }}</h1>
-<hr>
-<div class="row animated fadeIn fast"> 
-  <div class="col-md-4">
-    <img [src]="character.img" class="img-fluid" [alt]="character.nombre" class="character-img">
-    <br><br>
-    <a [routerLink]="['/personajes']" class="btn btn-outline-danger btn-block">Regresar</a>
+<div class="flex flex-wrap mx-6 my-8">
+  <div class="w-full sm:w-1/3 flex justify-center mb-2 sm:mb-0 bg-white sm:bg-transparent">
+    <figure class="inline animated fadeIn fast bg-white p-8 rounded overflow-hidden sm:shadow-lg ">
+      <img class="h-64" [src]=" character.img" [alt]="character.nombre">  
+    </figure>        
   </div>
-  <div class="col-md-8">
-    <h3>{{ character.nombre | uppercase }}</h3>
-    <hr>
-    <p>
-      {{ character.bio }}
-    </p>
-  </div>
+  <div class="w-full sm:w-2/3">
+    <div class="sm:ml-2 sm:mr-8 bg-white py-4 px-8 h-full">
+      <h2 class="text-2xl text-gray-800 text-blear">{{ character.nombre | uppercase }}</h2>
+      <p><small class="text-xs text-gray-600">Nacimiento: {{ character.nacimiento }} ( {{character.edad}} )</small></p>
+      <p class="mb-6">{{ character.bio }}</p>  
+      <a [routerLink]="['/personajes']" 
+        class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Regresar</a>
+    </div>
+  </div>  
 </div>

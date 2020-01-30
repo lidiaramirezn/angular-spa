@@ -1,20 +1,16 @@
-<nav class="navbar navbar-expand-lg navbar-sky">
-  <a class="navbar-brand"  routerLink="/">
-    <img src="assets/img/logo.png" class="navbar-brand-img" alt="">
+<nav class="flex items-center py-4 relative z-10 navbar">
+  <a class="w-1/3"  routerLink="/">
+    <img src="assets/img/logo.png" class="ml-4 navbar-brand-img" alt="logo">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mr-auto navbar-flex-grow">
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/personajes">Personajes</a>
-      </li>
-    </ul>    
-    <div class="navbar-flex-grow text-center">
-      <a class="" href="https://github.com/LidiaRamirez/angular-spa-udemy" target="_blank">
-        <img src="assets/img/github-logo.png">
-      </a>
-    </div>
-  </div>
+  <ul class="w-1/3">
+    <li class="ml-4" routerLinkActive="active" class="flex justify-center">
+      <img src="assets/img/skull.png" alt="icono" class="mr-2">
+      <a routerLink="/personajes" class="font-bold hover:text-blue-400 text-gray-900 md:text-gray-700">Personajes</a>
+    </li>
+  </ul>
+  <div class="w-1/3 flex justify-end">
+    <a href="https://github.com/LidiaRamirez/angular-spa-udemy" target="_blank">
+      <img src="assets/img/github-logo.png" class="mr-4">
+    </a>
+  </div>  
 </nav>

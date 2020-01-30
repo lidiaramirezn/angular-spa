@@ -4,8 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-characters',
-  templateUrl: './characters.component.html',
-  styleUrls: ['./characters.component.css']
+  templateUrl: './characters.component.html'
 })
 export class CharactersComponent implements OnInit {
   charactersOP:Character[] = [];

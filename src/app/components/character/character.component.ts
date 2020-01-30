@@ -6,7 +6,7 @@ import { CharactersService } from '../../services/characters.service';
 @Component({
   selector: 'app-character',
   templateUrl: './character.component.html',
-  styleUrls: ['./character.component.css']
+  styleUrls: ['./character.component.scss']
 })
 export class CharacterComponent implements OnInit {
   character:any = {}
